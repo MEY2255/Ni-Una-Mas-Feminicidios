@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONICA</title>
+    <style>
+ /* ESTILOS GENERALES Y DE FUENTES */
+        html, body {
+            font-family: 'Montserrat', sans-serif; /* Fuente para el cuerpo, legible */
+            width: 100%;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #0d0d0d; /* Fondo de respaldo oscuro */
+            color: #d8d8d8; /* Color de texto base, gris claro */
+        }
+
+        body {
+            /* === CONFIGURACIÓN DE IMAGEN DE FONDO IMPACTANTE === */
+            background-image: url('imagenes/fondo rojo.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        /* 💡 CAPA OSCURA (OVERLAY) para legibilidad sobre cualquier imagen */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100%;
+            background-color: rgba(0, 0, 0, 0.75); /* Negro semi-transparente (75%) */
+            padding-bottom: 50px; /* Espacio para el pie de página si lo tuvieras */
+        }
+
+        /* Contenedor principal para centrar el contenido y darle un ancho máximo */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative; /* Para que el contenido quede encima del overlay */
+            z-index: 10;
+        }
+        
+        /* 1. TÍTULOS PRINCIPALES (Efecto "Glitch" adaptado a "Impacto") */
+        .impact-title {
+            font-family: 'Cinzel', serif; /* Fuente elegante y dramática */
+            color: #ff3366; /* Rosa/rojo fuerte - color de la lucha */
+            font-size: 3.2em; 
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-shadow: 
+                0 0 10px rgba(255, 51, 102, 0.8), /* Glow suave */
+                0 0 20px rgba(0, 0, 0, 0.5); 
+            letter-spacing: 2px;
+            border-bottom: 3px solid #ff3366;
+            padding-bottom: 10px;
+        }
+
+        /* 2. TEXTO DE CONTENIDO (Estilo "Bloody Text" refinado) */
+        .bloody-text {
+            font-family: 'Montserrat', sans-serif;
+            color: #beacc7; /* Morado/gris suave para la reflexión */
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: rgba(20, 20, 20, 0.7); /* Fondo semi-transparente para legibilidad */
+            border-left: 5px solid #ff3366; /* Línea de impacto */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            /* Pequeño efecto de texto "desgastado" si se desea un toque más dramático */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .bloody-text b {
+            color: #ffffff;
+        }
+
+        /* 3. IMÁGENES DENTRO DEL CONTENIDO */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #ff3366;
+            box-shadow: 0 0 15px rgba(255, 51, 102, 0.5); /* Marco con glow */
+        }
+
+        /* 4. BOTONES (Estilo "Star" adaptado al tono) */
+        .btn-star {
+            display: inline-block;
+            background-color: #7b007b; /* Morado profundo, color de la lucha */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 5px 0;
+            box-shadow: 0 4px #4f004f; /* Sombra inferior para efecto 3D */
+            text-decoration: none; /* Asegura que el link dentro del botón no tenga subrayado */
+        }
+        
+        .btn-star a {
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-star i {
+            margin-right: 8px;
+            color: #ffcc00; /* Color de estrella o icono */
+        }
+
+        .btn-star:hover {
+            background-color: #990099; /* Morado más claro al pasar el ratón */
+            box-shadow: 0 4px 15px rgba(153, 0, 153, 0.7); /* Sombra con brillo */
+            transform: translateY(-2px); /* Ligeramente levantado */
+        }
+
+        .btn-star:active {
+            transform: translateY(2px); /* Simula ser presionado */
+            box-shadow: 0 2px #4f004f; /* Sombra inferior reducida */
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="glitch-text">EL ASESINATO DE MONICA CHAVES</h1>
+  <p class="bloody-text">Mónica Chávez y su padre Tomás eran parte del presunto historial de asesinatos que el propio García Guzmán se atribuía, tanto en sus publicaciones de Facebook como en las notas que dejó en su casa, según pudo saber Guerrera.
+"Me detalló la tortura a la que sometió a Mónica en 2012, lo que le hizo a su papá. El nivel de detalle me hizo tener un ataque de ansiedad en una ocasión", explica.
+Las Tesis sobre "Un violador en tu camino":
+"Se nos escapó de las manos y lo hermoso es que fue apropiado por otras"
+"También dijo que a Adriana la asesinó en febrero de 2018. A Martha Patricia en febrero de 2019. No me dio más información de ellas, solo que las estranguló", continuó.
+Luego del asesinato de Mónica y Tomás, García Guzmán dijo "ya soy un asesino serial", le contó a Guerrera, pues también aseguró que mató a su propio padre.</p>
+<p class="bloody-text">feminicidio de Mónica Chávez, una joven que fue asesinada el 30 de
+ septiembre del 2012 en Huixquilucan, Estado de México (Edomex).
+De acuerdo con las investigaciones realizadas por las autoridades
+ mexiquenses, lo que ocurrió fue que en ese caso, tanto Mónica como
+  García Guzmán se encontraban en un inmueble en el paraje El Mirador.
+   En ese lugar, el hombre habría atacado a la joven hasta causarle un 
+   traumatismo craneoencefálico que terminaría con su vida.
+</p>
+
+</body>
+</html>

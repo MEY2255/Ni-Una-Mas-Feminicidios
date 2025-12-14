@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feminicidios: Casos de México</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        /* ESTILOS GENERALES Y DE FUENTES */
+        html, body {
+            font-family: 'Montserrat', sans-serif; /* Fuente para el cuerpo, legible */
+            width: 100%;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #0d0d0d; /* Fondo de respaldo oscuro */
+            color: #d8d8d8; /* Color de texto base, gris claro */
+        }
+
+        body {
+            /* === CONFIGURACIÓN DE IMAGEN DE FONDO IMPACTANTE === */
+            background-image: url('imagenes/fondo rojo.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        /* 💡 CAPA OSCURA (OVERLAY) para legibilidad sobre cualquier imagen */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100%;
+            background-color: rgba(0, 0, 0, 0.75); /* Negro semi-transparente (75%) */
+            padding-bottom: 50px; /* Espacio para el pie de página si lo tuvieras */
+        }
+
+        /* Contenedor principal para centrar el contenido y darle un ancho máximo */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative; /* Para que el contenido quede encima del overlay */
+            z-index: 10;
+        }
+        
+        /* 1. TÍTULOS PRINCIPALES (Efecto "Glitch" adaptado a "Impacto") */
+        .impact-title {
+            font-family: 'Cinzel', serif; /* Fuente elegante y dramática */
+            color: #ff3366; /* Rosa/rojo fuerte - color de la lucha */
+            font-size: 3.2em; 
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-shadow: 
+                0 0 10px rgba(255, 51, 102, 0.8), /* Glow suave */
+                0 0 20px rgba(0, 0, 0, 0.5); 
+            letter-spacing: 2px;
+            border-bottom: 3px solid #ff3366;
+            padding-bottom: 10px;
+        }
+
+        /* 2. TEXTO DE CONTENIDO (Estilo "Bloody Text" refinado) */
+        .bloody-text {
+            font-family: 'Montserrat', sans-serif;
+            color: #beacc7; /* Morado/gris suave para la reflexión */
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: rgba(20, 20, 20, 0.7); /* Fondo semi-transparente para legibilidad */
+            border-left: 5px solid #ff3366; /* Línea de impacto */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            /* Pequeño efecto de texto "desgastado" si se desea un toque más dramático */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .bloody-text b {
+            color: #ffffff;
+        }
+
+        /* 3. IMÁGENES DENTRO DEL CONTENIDO */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #ff3366;
+            box-shadow: 0 0 15px rgba(255, 51, 102, 0.5); /* Marco con glow */
+        }
+
+        /* 4. BOTONES (Estilo "Star" adaptado al tono) */
+        .btn-star {
+            display: inline-block;
+            background-color: #7b007b; /* Morado profundo, color de la lucha */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 5px 0;
+            box-shadow: 0 4px #4f004f; /* Sombra inferior para efecto 3D */
+            text-decoration: none; /* Asegura que el link dentro del botón no tenga subrayado */
+        }
+        
+        .btn-star a {
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-star i {
+            margin-right: 8px;
+            color: #ffcc00; /* Color de estrella o icono */
+        }
+
+        .btn-star:hover {
+            background-color: #990099; /* Morado más claro al pasar el ratón */
+            box-shadow: 0 4px 15px rgba(153, 0, 153, 0.7); /* Sombra con brillo */
+            transform: translateY(-2px); /* Ligeramente levantado */
+        }
+
+        .btn-star:active {
+            transform: translateY(2px); /* Simula ser presionado */
+            box-shadow: 0 2px #4f004f; /* Sombra inferior reducida */
+        }
+
+    </style>
+</head>
+<body> 
+
+<div class="overlay">
+    <div class="container">
+
+        <h1 class="impact-title"><i class="fas fa-skull-crossbones"></i> El Monstruo de Toluca</h1> 
+
+        <p class="bloody-text">Los hechos clave que llevaron a este apodo incluyen:
+            <br>**Múltiples Víctimas:** Fue responsable de varios asesinatos. En el patio de su casa, ubicada en la colonia Villas Santín de Toluca, se encontraron los cuerpos de al menos tres mujeres: Jessica Guadalupe Jaramillo Orihuela, Adriana González Hernández y Martha Patricia Nava Sotelo.
+            <br>**Modus Operandi y Ubicación:** Enterraba los cuerpos de sus víctimas en el mismo lugar donde vivía, lo que generó gran conmoción en la comunidad.
+            <br>**Condenas Acumuladas:** Ha recibido múltiples sentencias que suman más de 335 años de prisión por los delitos de feminicidio, homicidio, violación, privación ilegal de la libertad e inhumación ilegal de restos humanos.
+        </p>
+        <p class="bloody-text">**Víctimas:** Adriana, Patty, Jessica</p>
+
+        <p>
+            <a href="monica.html" class="btn-star"><i class="fas fa-user-times"></i> Caso de Mónica</a>
+            <a href="patty.html" class="btn-star"><i class="fas fa-user-times"></i> Caso de Patricia</a>
+            <a href="jessica.html" class="btn-star"><i class="fas fa-user-times"></i> Caso de Jessica</a>
+        </p>
+
+        <a href="tema 1.html" class="btn-star" style="margin-top: 20px;"><i class="fas fa-book-open"></i> Biografía del Culpable</a>
+
+        <h1 class="impact-title" style="margin-top: 80px;"><i class="fas fa-house-damage"></i> El Monstruo de Atizapán</h1>
+
+        <p class="bloody-text">**CRÍMENES:** Mendoza mató, descuartizó, y presuntamente se comió partes de sus víctimas a lo largo de más de 30 años. Engañaba a mujeres, principalmente jóvenes y de bajos recursos, para llevarlas a su casa, donde las asesinaba, desmembraba y enterraba sus restos en el sótano.</p>
+
+        <img src="imagenes/el moustro de atizapan.jpg" alt="El Monstruo de Atizapán">
+
+        <p class="bloody-text">**Evidencia Encontrada:** Durante los cateos, las autoridades descubrieron un escenario macabro. Se encontraron miles de fragmentos óseos (más de 4,000) que podrían corresponder a un gran número de víctimas, además de objetos personales, ropa e identificaciones de las mujeres.</p>
+
+        <p><a href="#" class="btn-star"><i class="fas fa-search"></i> La Última Víctima</a></p>
+
+        <h1 class="impact-title" style="margin-top: 80px;"><i class="fas fa-cut"></i> El Caníbal de la Guerrero</h1>
+
+        <p class="bloody-text">**Arresto y Descubrimiento:** José Luis Calva fue detenido en 2007. Las autoridades allanaron su departamento y encontraron restos humanos cocinados y almacenados, además de un altar con símbolos satánicos. Se le vinculó con el asesinato y descuartizamiento de al menos tres personas.</p>
+        
+        <p class="bloody-text">**Muerte en Prisión:** El caso no llegó a juicio. José Luis Calva Zepeda fue encontrado ahorcado en su celda del Reclusorio Oriente el 11 de diciembre de 2007, apenas unas semanas después de su detención.</p>
+
+        <img src="imagenes/canibal de herrero.jpg" alt="El Caníbal de la Guerrero">
+
+        <p>
+            <a href="Infancia.html" class="btn-star"><i class="fas fa-question-circle"></i> ¿Por qué lo hizo?</a>
+            <a href="El misterioso hombre.html" class="btn-star"><i class="fas fa-mask"></i> ¿Su Ayudante?</a>
+        </p>
+
+        <h1 class="impact-title" style="margin-top: 80px;"><i class="fas fa-female"></i> La Mataviejitas</h1>
+        
+        <p class="bloody-text">La Mataviejitas (Juana Barraza Samperio) es la primera asesina serial en la historia mexicana. Sus víctimas eran personas de la tercera edad, a las que ofrecía ayuda como una manera de acercarse a ellas sin que sospecharan nada.</p>
+        
+        <p class="bloody-text">**Método Operandi:** Se hacía pasar por enfermera o trabajadora social para ganarse la confianza de sus víctimas. Una vez dentro, las ahorcaba o las atacaba con objetos punzocortantes, robando después algunos objetos de valor.</p>
+
+        <img src="imagenes/mataviejitas.jpg" alt="Juana Barraza - La Mataviejitas">
+
+        <p class="bloody-text">**Captura:** Fue detenida en 2006 a los 48 años. Lo más sorprendente fue descubrir que el asesino serial era en realidad una mujer. Fue acusada de al menos 17 asesinatos.</p>
+
+    </div>
+</div>
+
+</body>
+</html>
